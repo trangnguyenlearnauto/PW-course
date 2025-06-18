@@ -38,3 +38,5 @@ các kiểu đặt tên theo convention:
 - PascalCasse: tên class
 ## Object
 Object (đối tương) dùng để lưu trữ tập hợp các giá trị vào cùng một biến hoặc hằng số.
+## Logical operator
+## Array
