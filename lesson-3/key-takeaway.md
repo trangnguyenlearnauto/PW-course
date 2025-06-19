@@ -37,6 +37,22 @@ các kiểu đặt tên theo convention:
 - camelCase: tên biến
 - PascalCasse: tên class
 ## Object
+
 Object (đối tương) dùng để lưu trữ tập hợp các giá trị vào cùng một biến hoặc hằng số.
+1. Khowri
 ## Logical operator
 ## Array
+## for in
+
+dùng để lặp thuộc tính của object. Truy cập được index trong array
+lệnh for in:
+for ()
+
+## Function
+
+Function là hàm, là đoạn code được đặt tên và có thể tái sử dụng, thực iện 1 nhiệm vụ hoặc một tín toán cụ thể.
+1. Khai báo
+
+`function <nameFunction>() {
+  //code
+}`
