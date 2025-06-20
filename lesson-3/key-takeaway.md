@@ -52,6 +52,14 @@ student.name = “Nagi”; // Hợp lệ`
 
 ## Logical operator
 ## Array
+
+1. Push
+
+push thêm phần tử vào mảng.
+
+let arr = [1,2,3]
+arr.push("4);
+
 ## for in
 
 For in dùng để quyệt qua tất cả các key(tên thuộc tính) của một object hoặc index của mảng
@@ -105,4 +113,16 @@ Function là hàm, là đoạn code được đặt tên và có thể tái sử
 
 `function <nameFunction>() {
   //code
+}`
+
+## switch case
+switch case giống như if...else if .. else, nhưng được viết ngắn gọn, dễ nhìn khi bạn cần so sánh một biến với nhiều giá trị khác nhau.
+- cú pháp:
+
+`switch (biến){
+  case giá_trị_1: // nếu biến == giá trị 1 -> chạy code
+  break;
+  case giá_trị_2: // nếu biến == giá trị 2 -> chạy code
+  break;
+  default: // nếu không có giá trị khớp với bất kì case nào - chạy code này
 }`
