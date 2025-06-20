@@ -39,14 +39,64 @@ các kiểu đặt tên theo convention:
 ## Object
 
 Object (đối tương) dùng để lưu trữ tập hợp các giá trị vào cùng một biến hoặc hằng số.
-1. Khowri
+1. khởi tạo object
+
+2. Thêm thuộc tính object
+
+3. xóa thuộc tính object
+
+4. update thuộc tính object
+
+`const student = {“name”: “alex”, “age”: 20}
+student.name = “Nagi”; // Hợp lệ`
+
 ## Logical operator
 ## Array
 ## for in
 
-dùng để lặp thuộc tính của object. Truy cập được index trong array
-lệnh for in:
-for ()
+For in dùng để quyệt qua tất cả các key(tên thuộc tính) của một object hoặc index của mảng
+- cú pháp:
+`for(let key in object){
+  //code implement
+}
+
+ví dụ:
+let person = {
+  name: "trang",
+  age: 29
+}
+for (let key in person) {
+  console.log(key + ":" + person[key])
+}
+
+## for each
+
+là một phương thức của mảng dùng để chạy một hàm cho mỗi phần tử của mảng đó
+- cú pháp:
+
+array.forEach(function(value, index) {
+  //code run
+})
+
+- duyệt mảng:
+
+let fruits = ["apple", "banana", "orange"];
+
+fruits.forEach(function(fruit){
+
+  console.log(fruit);
+
+});
+
+- duyệt mảng object:
+
+`let users = [
+  {name: "Trang", age:35},
+  {name: "Minh", age: 20}
+];
+users.forEach(function(user){
+  console.log(user.name + "-" + user.age)
+})`
 
 ## Function
 
