@@ -53,12 +53,14 @@ student.name = “Nagi”; // Hợp lệ`
 ## Logical operator
 ## Array
 
-1. Push
+1. Push value to array
 
 push thêm phần tử vào mảng.
 
 let arr = [1,2,3]
 arr.push("4);
+
+
 
 ## for in
 
@@ -105,6 +107,14 @@ fruits.forEach(function(fruit){
 users.forEach(function(user){
   console.log(user.name + "-" + user.age)
 })`
+
+## for of
+
+là vòng lặp dùng để duyệt qua các giá trị trong các iterable object như array, string, set, map,..
+
+- cú pháp:
+
+`for (let value of iterable){//code run}`
 
 ## Function
 

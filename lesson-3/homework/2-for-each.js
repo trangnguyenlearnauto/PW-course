@@ -30,11 +30,11 @@ console.log("giá trị nhỏ nhất =", min);
 
 
 //3
-let array3 = [1,2,3,4,5];
+let array3 = [1, 2, 3, 4, 5];
 let newArr = [];
-array3.forEach((newNumber)=>{
+array3.forEach((newNumber) => {
     // console.log(newNumber);
-    newArr.push(newNumber*2);
+    newArr.push(newNumber * 2);
 
 })
 console.log(newArr);
