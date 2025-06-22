@@ -46,6 +46,26 @@ Object (đối tương) dùng để lưu trữ tập hợp các giá trị vào 
 - trong đó <thuoc_tinh> giống quy tắt đặt tên biến
 - <giá_trí> có kiểu giống biến, hoặc là 1 object khác
 
+`let user = {“name”: “Alex”, “age”: 10,
+“email”: “alex@gmail.com”}
+const product = {
+“name”: “Laptop”,
+“price”: 500,
+“isWindow”: true,
+“manufacturer”: {
+“name”: “Acer”,
+“year”: 2024
+}
+}`
+
+- Sử dụng:
+`console.log("name = " + user.name);
+console.log("manufacturer name = " +
+product.manufacturer.name);
+console.log(“price = “,
+product[“price”]);`
+
+
 2. Thêm thuộc tính vào object
 
 cú pháp: 

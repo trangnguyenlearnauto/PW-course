@@ -1,11 +1,11 @@
 //1 Tạo mảng chứa các kí tự nghịch đảo từ một chuỗi đã cho. Ví dụ với chuỗi ”Playwright” thì mảng kết quả sẽ là [“t”, “h”, “g”, “i”, “r”, “w”,“y”, “a”, “l”, “P”] => dua vao bai tap for
 // cách dùng vòng lặp for
 let string = ["P", "l", "a", "y", "w", "r", "i", "g", "h", "t"]
-let newStr = [];
-for (let i = string.length - 1; i >= 0; i--) {// có 10 phần tử, nhưng index bắt đầu từ 0 nên phải -1
-    newStr.push(string[i]);
-}
-console.log(newStr);
+// let newStr = [];
+// for (let i = string.length - 1; i >= 0; i--) {// có 10 phần tử, nhưng index bắt đầu từ 0 nên phải -1
+//     newStr.push(string[i]);
+// }
+// console.log(newStr);
 
 // cách dùng vòn lặp for of
 let revert = "";
