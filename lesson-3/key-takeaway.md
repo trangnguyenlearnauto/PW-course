@@ -41,9 +41,23 @@ các kiểu đặt tên theo convention:
 Object (đối tương) dùng để lưu trữ tập hợp các giá trị vào cùng một biến hoặc hằng số.
 1. khởi tạo object
 
-2. Thêm thuộc tính object
+`let/const <tên_object> = {<tên_thuộc_tính>: <giá_trị>, <tên_thuộc_tính2>: <giá_trị>}
+
+- trong đó <thuoc_tinh> giống quy tắt đặt tên biến
+- <giá_trí> có kiểu giống biến, hoặc là 1 object khác
+
+2. Thêm thuộc tính vào object
+
+cú pháp: 
+
+`let bike = {make: "yamaha", model:"3'};`
+`bike.color = "blue";`
 
 3. xóa thuộc tính object
+
+cú pháp:
+
+`delete bike.color;`
 
 4. update thuộc tính object
 
@@ -59,8 +73,6 @@ push thêm phần tử vào mảng.
 
 let arr = [1,2,3]
 arr.push("4);
-
-
 
 ## for in
 
@@ -90,13 +102,9 @@ array.forEach(function(value, index) {
 
 - duyệt mảng:
 
-let fruits = ["apple", "banana", "orange"];
+`let fruits = ["apple", "banana", "orange"];`
 
-fruits.forEach(function(fruit){
-
-  console.log(fruit);
-
-});
+`fruits.forEach(function(fruit)=>{console.log(fruit);});`
 
 - duyệt mảng object:
 
@@ -114,7 +122,9 @@ là vòng lặp dùng để duyệt qua các giá trị trong các iterable obje
 
 - cú pháp:
 
-`for (let value of iterable){//code run}`
+`for (let value of iterable){
+//code run
+}`
 
 ## Function
 
