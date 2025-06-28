@@ -10,17 +10,17 @@ test('bai tap 1', async ({ page }) => {
     });
     await test.step("fill the form", async () => {
         await page.locator("//input[@id='username']").fill('Trang');
-        await page.locator("//input[@id='username']").fill('trang@gmail.com');
+        await page.locator("//input[@id='email']").fill('trang@gmail.com');
         await page.locator("//input[@id='female']").click();
         await page.locator("//input[@id='traveling']").click();
         await page.locator("//option[@value='music']").click();
         await page.locator("//select[@id='country']").click();
-        await page.locator("//label[normalize-space()='Country:']").selectOption('uk');
-        await page.locator("//input[@id='dob']").pressSequentially("01251998");
-        // await page.locator("//input[@id='profile']").setInputFiles("test-data\image1.png");
+        await page.locator("//select[@id='country']").selectOption('uk');
+        await page.locator("//input[@id='dob']").pressSequentially("01/25/1998");
+        //await page.locator("//input[@id='profile']").setInputFiles("test-data\image1.png");
         await page.locator("//textarea[@id='bio']").fill('hi my name is Trang');
         await page.locator("//input[@id='newsletter']").click();
-        await page.locator("//input[@id='toggleOption']").check();
+        //await page.locator("//input[@id='toggleOption']").check();
     });
     await test.step("ratingUs", async() => {
         let x, y;
@@ -43,10 +43,10 @@ test('bai tap 1', async ({ page }) => {
         const rateStarBoundingbox = await page.locator("//div[@id='starRating']").boundingBox();
         console.log(rateStarBoundingbox);
         if (rateStarBoundingbox) {
-            x = rateStarBoundingbox.width / 1;
-            y = rateStarBoundingbox.height / 1;
+            x = rateStarBoundingbox.width / 1.25;
+            y = rateStarBoundingbox.height / 1.25;
         }
-        await page.locator("//input[@id='rating']").click({
+        await page.locator("//div[@id='starRating']").click({
             position: {
                 x: x,
                 y: y
