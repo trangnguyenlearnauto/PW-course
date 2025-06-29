@@ -1,12 +1,18 @@
 # 1
 a. Các phần tử con (child): <label for="username" id="preceding">Username:</label>, <input type="text" id="username" name="username" required="">
+
 b. Các phần tử cha (parent): <form id="registrationForm">
+
 c. Các phần tử hậu duệ (descendant): <label for="username" id="preceding">Username:</label>, <input type="text" id="username" name="username" required=""> // tìm tất cả các con cháu
+
 d. Các phần tử tổ tiên (ancestor): <form id="registrationForm"> // là tất cả các node nằm ở phía trên node hiện tại, theo trục ngược lên cây DOM, cha ông, ô cố. k bao gồm con, anh, em của cha.
+
 e. Các phần tử anh em (sibling): 
+ <div class="form-group" id="parent">
  <div class="form-group">
  <div class="form-group">
  <div class="form-group">
+
 f. Các phần tử phía sau (following):  // lấy các node bên dưới nhưng không bao gồm con cháu trực tiếp của node hiện tại, có thể lấy con cháu của các node ngang hàng bên dưới
 <div class="form-group">
 <label for="gender">Gender:</label>

@@ -21,5 +21,5 @@ test('bai tap 2a', async ({ page }) => {
     await test.step("add 1 product 3", async () => {
         await page.locator("//div[@class='product-name' and text()='Product 3']/following-sibling::div/following-sibling::button").click();
     });
-
+ //button[@data-product-id='3']
 })

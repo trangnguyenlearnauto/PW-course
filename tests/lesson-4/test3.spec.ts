@@ -17,6 +17,13 @@ test('bai tap 3', async ({ page }) => {
         }
     });
     await test.step("xóa todo số lẻ", async () =>{
-        const deleteButton = page.locator("")
+        page.on('dialog', async dialog => {
+            await dialog.accept();
+        })
+        for (let i =1; i <=100; i++) {
+            if (i %2 !==0 ) {
+                await page.locator(`//button[@id="todo-${i}-delete"]`).click();
+            }
+        }
     })
 })
